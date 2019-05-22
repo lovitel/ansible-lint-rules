@@ -2,13 +2,13 @@ from ansiblelint import AnsibleLintRule
 
 import re
 
-class UseCapitalInTrueFalse(AnsibleLintRule):
+class UseNonCapitalInTrueFalse(AnsibleLintRule):
     id = 'E604'
-    shortdesc = 'True/False should be started from capitalized letter'
+    shortdesc = 'true/false should be started from non-capitalized letter'
     description = ''
     tags = ['formatting']
 
-    compiled = re.compile(r'\:\s(true|false)$')
+    compiled = re.compile(r'\:\s(True|False)$')
 
     def match(self, file, text):
         m = self.compiled.search(text)

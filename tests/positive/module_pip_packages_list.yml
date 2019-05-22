@@ -1,6 +1,6 @@
 - name: playbook for checking pip module
   hosts: localhost
-  gather_facts: True
+  gather_facts: true
   tasks:
     - name: install pip modules
       pip:
