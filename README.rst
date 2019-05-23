@@ -40,7 +40,7 @@ Rules
 +------------+----------------------------------------------------------------------+
 |E603        |Use true/false instead of yes/no                                      |
 +------------+----------------------------------------------------------------------+
-|E604        |true/false should be started from non-capitalized letter                  |
+|E604        |true/false should be started from non-capitalized letter              |
 +------------+----------------------------------------------------------------------+
 |**E7**      |*Metadata*                                                            |
 +------------+----------------------------------------------------------------------+
@@ -55,7 +55,7 @@ Rules
 Why so many shell module lint?
 ---------------------------------------------------------
 
-Because user may want to use a command to correct use. Since we separete these rule, user can disable specific rule easily.
+Because user may want to use a command to correct use. Since we separate these rule, user can disable specific rule easily.
 
 If you can manage playbook your self, consider set `skip_ansible_lint` tag.
 

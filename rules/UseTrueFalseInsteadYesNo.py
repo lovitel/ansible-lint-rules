@@ -4,7 +4,7 @@ import re
 
 class UseTrueFalseInsteadYesNo(AnsibleLintRule):
     id = 'E603'
-    shortdesc = 'Use True/False instead of yes/no'
+    shortdesc = 'Use true/false instead of yes/no'
     description = ''
     tags = ['formatting']
 
