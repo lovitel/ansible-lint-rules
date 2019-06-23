@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: false
+
+  vars:
+  host:
+    testhost1: 127.0.0.2
+    testhost2: 127.0.0.3
+  tasks:
+    - debug:
+        msg: '{{ item }}'
+      loop: '{{ host.items() | list }}'
